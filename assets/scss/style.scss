@@ -13,6 +13,7 @@ body {
     line-height: 1.5;
     padding: 0;
     margin: 0 auto;
+    background: url(../html/images/base.jpg) 0 0 no-repeat;
 }
 a {
   text-decoration: none;
@@ -52,58 +53,15 @@ header ul li::after {content:' |'}
 header ul li:last-child::after {content:''}
 header ul li a {color:inherit}
 
-// スマホ用ハンバーガーメニュー
-#navToggle {
-    display:none;
-    position:absolute;
-    right:13px;
-    top:13px;
-    width:30px;
-    height:25px;
-    cursor:pointer;
+// ************ main img ****************
+// ***********************************
+.main-img {
+  width: 100px;
+  height: 100px;
 }
-#navToggle div {position:relative;}
-#navToggle span {
-    display:block;
-    position:absolute;
-    width:100%;
-    border-bottom:solid 3px #999;
-    transition: .35s ease-in-out;
-}
-#navToggle span:nth-child(1) {top:0;}
-#navToggle span:nth-child(2) {top:11px;}
-#navToggle span:nth-child(3) {top:22px;}
 
-@media screen and (max-width: 640px) {
-  header nav {
-    position: absolute;
-    right:0;
-    top: -300px;
-    background:rgba(255,255,255,.7);
-    width:50%;
-    padding:0 10px;
-    transition:.5s ease-in-out;
-    text-align:left;
-  }
-  header ul {margin:0}
-  header ul li {
-    display:block;
-    margin:0;
-    border-bottom:dotted 1px #fff;
-    line-height:3;
-  }
-  header ul li a {display:block}
-  header ul li::after {content:''}
-  header ul li:last-child {border-bottom:none}
-/*display:noneだったボタンを display:blockにして表示します*/
-  #navToggle {display:block}
-  .openNav #navToggle span:nth-child(1) {
-    top: 11px;
-    transform:rotate(-45deg)}
-  .openNav #navToggle span:nth-child(2),
-  .openNav #navToggle span:nth-child(3) {
-    top: 11px;
-    transform:rotate(45deg)}
-  .openNav nav {
-    transform: translateY(351px)}
-}
+
+
+
+
+
