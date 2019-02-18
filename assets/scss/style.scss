@@ -20,6 +20,7 @@ body {
 a {
   text-decoration: none;
 }
+li {list-style-type: none;}
 
 // **********header********
 // ************************
@@ -75,11 +76,23 @@ header ul li a {color:inherit}
     top: -50px;
     left: -10%;
 }
-.main-img .takoyaki {
+// .main-img .takoyaki {
+//     z-index: 1;
+//     position: absolute;
+//     top: -100px;
+//     left: -50%;
+// }
+.main-img .suisai01 {
     z-index: 1;
     position: absolute;
-    top: -100px;
-    left: -50%;
+    top: 10px;
+    left: 10px;
+}
+.main-img .suisai03 {
+    z-index: 1;
+    position: absolute;
+    top: 35px;
+    left: 60px;
 }
 .main-img .hansin {
     z-index: 1;
@@ -120,10 +133,64 @@ header ul li a {color:inherit}
 // *************************
 .container-works {
     position: absolute;
-    padding-top: 200px;
+    margin-top: 100px;
+    width: 1000px;
+    height: 700px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    z-index: 1;
 }
-
+.site {
+    grid-column: 1/3;
+    width: 640px;
+    height: 300px;
+    margin: 20px;
+    border-radius: 5px;
+    background: url("../images/white_wasi.jpeg") 0 0 no-repeat/cover;;
+    box-shadow: 0 3px 6px #ccc;
+}
+.card1 {
+        width: 300px;
+        margin: 20px;
+        border-radius: 5px;
+        background: url("../images/white_wasi.jpeg") 0 0 no-repeat/cover;
+        box-shadow: 0 3px 6px #ccc;
+    }
+    .image1 {
+        width: 90%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 5px 5px 0 0;
+        margin: 5px 15px;
+    }
+    .image2 {
+        width: 90%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 5px 5px 0 0;
+        margin: 5px 30px;
+    }
+    .image3 {
+        width: 90%;
+        height: 400px;
+        object-fit: contain;
+        border-radius: 5px 5px 0 0;
+        margin: 5px 15px;
+    }
+    .content1 {
+        padding: 10px;
+        color: #666;
+    }
 // ********contact**********
 // *************************
-
+.container-profile {
+    position: absolute;
+    top: 30%;
+    right: 0;
+    width: 400px;
+    height: 500px;
+    padding: 20px;
+    z-index: 1;
+}
 
