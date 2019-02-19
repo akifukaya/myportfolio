@@ -1,12 +1,20 @@
-$(function(){
-    $('.pop').click(function(e){
-        e.preventDefault();
-        var id = $(this).attr('href');
-        $(id).fadeIn();
-        $('.popupbg').fadeIn();
-    })
-    $('.popupbg,.close_btn').click(function(){
-        $('.popup_wrapper:visible').fadeOut();
-        $('.popupbg').fadeOut();
-    })
-})
+//親Swiper
+var mySwiperp = new Swiper('.swiper-parent', {
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable: true
+    }
+});
+//子Swiper
+var mySwiperc = new Swiper('.swiper-child', {
+    nested: true,
+    slidesPerColumnFill: 'row',
+    slidesPerColumn: 2,
+    slidesPerView: 3,
+    slidesPerGroup: 6
+});

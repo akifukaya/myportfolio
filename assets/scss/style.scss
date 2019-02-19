@@ -131,31 +131,40 @@ header ul li a {color:inherit}
 
 // ********works**********
 // *************************
-.container-works {
-    position: absolute;
-    margin-top: 100px;
-    width: 1000px;
-    height: 700px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    z-index: 1;
+/* 全体のスタイル */
+.swiper-container {
+    width: 100%;
+    height: 800px;
+}
+/* 親Swiperのスライドの設定 */
+.swiper-wrapper {
+    margin-top: 50px;
+    height: 0 !important;
+}
+.swiper-parent .swiper-slide {
+    height: 250px;
+}
+/* 子Swiperのスライドの設定 */
+.swiper-child .swiper-slide {
+    height: 300px;
 }
 .site {
-    grid-column: 1/3;
-    width: 640px;
-    height: 300px;
-    margin: 20px;
+    width: 620px !important;
+    height: 280px;
+    margin: 20px 0 10px 30px;
     border-radius: 5px;
-    background: url("../images/white_wasi.jpeg") 0 0 no-repeat/cover;;
+    background: url("../images/white_wasi.jpeg") 0 0 no-repeat/cover;
     box-shadow: 0 3px 6px #ccc;
 }
 .card1 {
-        width: 300px;
-        margin: 20px;
+        width: 290px !important;
+        margin: 20px 0 10px 30px !important;
         border-radius: 5px;
         background: url("../images/white_wasi.jpeg") 0 0 no-repeat/cover;
         box-shadow: 0 3px 6px #ccc;
+    }
+    .card2 {
+        width: 250px !important;
     }
     .image1 {
         width: 90%;
@@ -173,15 +182,17 @@ header ul li a {color:inherit}
     }
     .image3 {
         width: 90%;
-        height: 400px;
+        height: 300px;
         object-fit: contain;
         border-radius: 5px 5px 0 0;
-        margin: 5px 15px;
+        margin: 30px 80px;
     }
     .content1 {
         padding: 10px;
         color: #666;
     }
+
+
 // ********contact**********
 // *************************
 .container-profile {

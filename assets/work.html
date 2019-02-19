@@ -16,6 +16,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" type="text/css" />
   <!-- faviconの読み込み -->
   <link rel="icon" href="../html/images/favicon.ico">
+  <!-- swiperの読み込み -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
 </head>
 <body>
   <div class="wrapper">
@@ -37,67 +40,107 @@
     <div class="main-img">
       <img src="../images/suisai01.png" alt="" width="100px" class="suisai01">
       <img src="../images/suisai03.png" alt="" class="suisai03">
-<!--       <img class="takoyaki" src="../images/takoyaki_photo.png" alt="takoyaki" width="1300px"> -->
     </div>
-    <div class="container-works">
-      <div class="site">
-        <a href="http://project.zd3f12.sim.zdrv.com/f5f15a9eed345d20b38300650913597a/assets/index.html" target="_blank">
+<!-- 親Swiper START -->
+<div class="swiper-container swiper-parent">
+  <!-- メイン表示部分 -->
+  <div class="swiper-wrapper">
+    <!-- スライド1 -->
+    <div class="swiper-slide">
+      <!-- 子Swiper START -->
+      <div class="swiper-container swiper-child">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide site"><a href="http://project.zd3f12.sim.zdrv.com/f5f15a9eed345d20b38300650913597a/assets/index.html" target="_blank">
         <img src="../images/works/Russell.png" alt="" class="image2"></a>
-        <p class="content1">本文</p>
+        <p class="content1">本文</p></div>
+          <div class="swiper-slide card1"><img src="../images/works/stamp.png" class="image1">
+        <p class="content1">本文</p></div>
+          <div class="swiper-slide card1"><img src="../images/works/rain_glass.png" class="image1">
+        <p class="content1">本文</p></div>
+          <div class="swiper-slide card1"><img src="../images/works/water_color.png" class="image1">
+        <p class="content1">本文</p></div>
+          <div class="swiper-slide card2"><img src="../images/title.png" alt="" class="image3"></div>
+        </div>
       </div>
-      <div class="card1">
-        <img src="../images/works/stamp.png" class="image1">
-        <p class="content1">本文</p>
+      <!-- 子Swiper END -->
+    </div>
+    <!-- スライド2 -->
+    <div class="swiper-slide">
+      <!-- 子Swiper START -->
+      <div class="swiper-container swiper-child">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide card1"><img src="../images/works/back_light.png" alt="" class="image1">
+        <p class="content1">本文</p></div>
+          <div class="swiper-slide card1"><img src="../images/works/soundWave.png" alt="" class="image1">
+        <p class="content1">本文</p></div>
+          <div class="swiper-slide card1"><img src="../images/works/drop_rain.png" class="image1">
+        <p class="content1">本文</p></div>
+          <div class="swiper-slide card1"><img src="../images/works/3photo.png" class="image1">
+        <p class="content1">本文</p></div>
+          <div class="swiper-slide card1"><img src="../images/works/building.png" class="image1">
+        <p class="content1">本文</p></div>
+          <div class="swiper-slide"><img src="../images/takoyaki_photo.png" alt="" class="image3"></div>
+        </div>
       </div>
-      <div class="card1">
-        <img src="../images/works/rain_glass.png" class="image1">
-        <p class="content1">本文</p>
+      <!-- 子Swiper END -->
+    </div>
+        <!-- スライド3 -->
+    <div class="swiper-slide">
+      <!-- 子Swiper START -->
+      <div class="swiper-container swiper-child">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide card1"><img src="../images/works/banner.png" alt="" class="image1">
+        <p class="content1">本文</p></div>
+          <div class="swiper-slide card1"><img src="../images/works/banner_fuji.png" alt="" class="image1">
+        <p class="content1">本文</p></div>
+          <div class="swiper-slide card1"><img src="../images/works/gift_banner.png" class="image1">
+        <p class="content1">本文</p></div>
+          <div class="swiper-slide card1"><img src="../images/works/banner_shose.png" class="image1">
+        <p class="content1">本文</p></div>
+          <div class="swiper-slide card1"><img src="../images/works/banner_vesitable.png" class="image1">
+        <p class="content1">本文</p></div>
+          <div class="swiper-slide"><img src="../images/jinjya.png" alt="" class="image3"></div>
+        </div>
       </div>
-      <div class="card1">
-        <img src="../images/works/water_color.png" class="image1">
-        <p class="content1">本文</p>
+      <!-- 子Swiper END -->
+    </div>
+        <!-- スライド4 -->
+    <div class="swiper-slide">
+      <!-- 子Swiper START -->
+      <div class="swiper-container swiper-child">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide card1"><img src="../images/works/goldtext.png" alt="" class="image1">
+        <p class="content1">本文</p></div>
+          <div class="swiper-slide card1"><img src="../images/works/fairy.png" alt="" class="image1">
+        <p class="content1">本文</p></div>
+          <div class="swiper-slide card1"><img src="../images/works/comic_text.png" class="image1">
+        <p class="content1">本文</p></div>
+          <div class="swiper-slide card1"><img src="../images/works/bronze.png" class="image1">
+        <p class="content1">本文</p></div>
+          <div class="swiper-slide card1"><img src="../images/works/neon_text.png" class="image1">
+        <p class="content1">本文</p></div>
+          <div class="swiper-slide"><img src="../images/sheep.jpg" alt="" class="image3"></div>
+        </div>
       </div>
-      <div>
-        <img src="../images/title.png" alt="" class="image3">
-      </div>
-<!--       <div class="image01">photo effect</div>
-      <div class="image02"><img src="../images/works/stamp.png" alt=""></div>
-      <div class="image03"></div>
-      <div class="image04"><img src="../images/works/redcar.png" alt=""></div>
-      <div class="image05"><img src="../images/works/rain_glass.png" alt=""></div>
-      <div class="image06"><img src="../images/works/goldtext.png" alt=""></div>
-      <div class="image07"><img src="../images/works/bronze.png" alt=""></div>
-      <div class="image08"><img src="../images/works/comic_text.png" alt=""></div>
-      <div class="image09"></div>
-      <div class="image10"><img src="../images/works/building.png" alt=""></div>
-      <div class="image11"></div>
-      <div class="image12"><img src="../images/works/gift_banner.png" alt=""></div>
-      <div class="image13"><img src="../images/works/3photo.png" alt="" class="long"></div>
-      <div class="image14"></div>
-      <div class="image15"><img src="../images/works/skywalker.png" alt=""></div>
-      <div class="image16"></div>
-      <div class="image17"><img src="../images/works/button.png" alt=""></div>
-      <div class="image18"><img src="../images/works/snow.png" alt=""></div>
-      <div class="image19"><img src="../images/works/neon_text.png" alt=""></div>
-      <div class="image20"><img src="../images/works/banner_shose.png" alt="" class="long"></div>
-      <div class="image21"></div>
-      <div class="image22"><img src="../images/works/back_light.png" alt=""></div>
-      <div class="image23"><img src="../images/works/drop_rain.png" alt=""></div>
-      <div class="image24"><img src="../images/works/fairy.png" alt=""></div>
-      <div class="image25"><img src="../images/works/christmas.png" alt=""></div>
-      <div class="image26"></div>
-      <div class="image27"><img src="../images/title.png" alt="" class="long"></div>
-      <div class="image28"><img src="../images/works/banner_fuji.png" alt=""></div>
-      <div class="image29"><img src="../images/works/wine_banner.png" alt=""></div>
-      <div class="image30"><img src="../images/works/uzumaki.png" alt=""></div>
-      <div class="image31"><img src="../images/works/banner.png" alt=""></div>
-      <div class="image32"><img src="../images/works/soundWave.png" alt=""></div>
-      <div class="image33"></div>
-      <div class="image34"><img src="../images/works/banner_vesitable.png" alt="" class="long"></div>
-      <div class="image35"><img src="../images/works/water_color.png" alt=""></div> -->
+      <!-- 子Swiper END -->
+    </div>
+  </div>
+  <!-- 前ページボタン -->
+  <div class="swiper-button-prev"></div>
+  <!-- 次ページボタン -->
+  <div class="swiper-button-next"></div>
+  <!-- ページネーション -->
+  <div class="swiper-pagination"></div>
+</div>
+<!-- Swiper END -->
+
+</div>
     </div>
   </div>
   </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+<script src="js/style.js"></script>
 </body>
-<link rel="stylesheet" href="js/style.js">
 </html>
