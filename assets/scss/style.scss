@@ -172,6 +172,13 @@ header ul li a {color:inherit}
         object-fit: cover;
         border-radius: 5px 5px 0 0;
         margin: 5px 15px;
+        transition-duration: 0.5s;
+    }
+    .image1:hover {
+        transform: scale(1.5,1.5);
+        cursor: pointer;
+        object-fit: contain;
+
     }
     .image2 {
         width: 90%;
