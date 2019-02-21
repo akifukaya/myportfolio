@@ -65,11 +65,150 @@ header ul li a {color:inherit}
     margin: 0 auto;
     text-align: left;
 }
-.main-img .tiger {
+.main-img .tiger01 {
     z-index: 1;
     position: absolute;
     top: -200px;
-    left: -50%;
+    left: -60%;
+    opacity: 0;
+    animation: a 1.5s 1s forwards;
+}
+@keyframes a {
+    0% { opacity: 1;}
+    100% {opacity: 1;}
+}
+.main-img .tiger02 {
+    z-index: 1;
+    position: absolute;
+    top: -250px;
+    left: -60%;
+    opacity: 0;
+    animation: b 2.5s 2s forwards;
+}
+@keyframes b {
+    0% { opacity: 1;}
+    100% {opacity: 1;}
+}
+.main-img .tiger03 {
+    z-index: 1;
+    position: absolute;
+    top: -250px;
+    left: -60%;
+    opacity: 0;
+    animation: c 3s 2.5s forwards;
+}
+@keyframes c {
+    0% { opacity: 1;}
+    100% {opacity: 1;}
+}
+.main-img .tiger04 {
+    z-index: 1;
+    position: absolute;
+    top: -250px;
+    left: -60%;
+    opacity: 0;
+    animation: d 3.5s 3s forwards;
+}
+@keyframes d {
+    0% { opacity: 1;}
+    100% {opacity: 1;}
+}
+.main-img .tiger05 {
+    z-index: 1;
+    position: absolute;
+    top: -250px;
+    left: -60%;
+    opacity: 0;
+    animation: e 4.5s 4s forwards;
+}
+@keyframes e {
+    0% { opacity: 1;}
+    100% {opacity: 1;}
+}
+.main-img .tiger06 {
+    z-index: 1;
+    position: absolute;
+    top: -250px;
+    left: -60%;
+    opacity: 0;
+    animation: f 5s 4.5s forwards;
+}
+@keyframes f {
+    0% { opacity: 1;}
+    100% {opacity: 1;}
+}
+.main-img .tiger07 {
+    z-index: 1;
+    position: absolute;
+    top: -250px;
+    left: -60%;
+    opacity: 0;
+    animation: g 6s 5s forwards;
+}
+@keyframes g {
+    0% { opacity: 1;}
+    100% {opacity: 1;}
+}
+.main-img .tiger08 {
+    z-index: 1;
+    position: absolute;
+    top: -250px;
+    left: -60%;
+    opacity: 0;
+    animation: h 6.5s 6s forwards;
+}
+@keyframes h {
+    0% { opacity: 1;}
+    100% {opacity: 1;}
+}
+.main-img .tiger09 {
+    z-index: 1;
+    position: absolute;
+    top: -250px;
+    left: -60%;
+    opacity: 0;
+    animation: i 7s 6.5s forwards;
+}
+@keyframes i {
+    0% { opacity: 1;}
+    100% {opacity: 1;}
+}
+.main-img .tiger10 {
+    z-index: 1;
+    position: absolute;
+    top: -250px;
+    left: -60%;
+    opacity: 0;
+    animation: j 8s 7s forwards;
+}
+@keyframes j {
+    0% { opacity: 1;}
+    100% {opacity: 1;}
+}
+.main-img .tiger11 {
+    z-index: 1;
+    position: absolute;
+    top: -250px;
+    left: -60%;
+    opacity: 0;
+    animation: k 8.5s 8s forwards;
+}
+@keyframes k {
+    0% { opacity: 1;}
+    100% { opacity: 1; }
+}
+.tiger12 {
+    z-index: 1;
+    position: absolute;
+    top: -250px;
+    left: -60%;
+    opacity:0;
+    animation: late 3s 15s ease-in-out;
+}
+@keyframes late {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
 }
 .main-img .watasi {
     z-index: 1;
@@ -77,23 +216,23 @@ header ul li a {color:inherit}
     top: -50px;
     left: -10%;
 }
-// .main-img .takoyaki {
-//     z-index: 1;
-//     position: absolute;
-//     top: -100px;
-//     left: -50%;
-// }
-.main-img .suisai01 {
+.main-img .suisai04 {
     z-index: 1;
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: -20px;
+    left: -80px;
+}
+.main-img .suisai04-s {
+    z-index: 1;
+    position: absolute;
+    top: -5px;
+    left: 40px;
 }
 .main-img .suisai03 {
     z-index: 1;
     position: absolute;
-    top: 35px;
-    left: 100px;
+    top: 50%;
+    left: -40px;
 }
 .main-img .hansin {
     z-index: -1;
@@ -114,13 +253,13 @@ header ul li a {color:inherit}
     text-indent: -9999px;
 }
 .inc {
-    background: url("../images/suisai03.png") 0 0 no-repeat/contain;
-    width: 100px;
-    height: 100px;
+    background: url("../images/suisai04.png") 0 0 no-repeat/contain;
+    width: 150px;
+    height: 150px;
     position: fixed;
     right: 3%;
     bottom: 30%;
-    z-index: 1;
+    z-index: -1;
 }
 // ********profile**********
 // *************************
@@ -263,6 +402,14 @@ header ul li a {color:inherit}
     position: absolute;
     bottom: -20px;
     right: -65px;
+}
+.suisai-skill {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: 100px;
+    right: -100px;
+    z-index: -1;
 }
 // ********contact**********
 // *************************
