@@ -263,7 +263,15 @@ header ul li a {color:inherit}
 }
 // ********profile**********
 // *************************
-
+.container-profile {
+    position: absolute;
+    top: 30%;
+    right: 0;
+    width: 400px;
+    height: 500px;
+    padding: 20px;
+    z-index: 1;
+}
 // ********works**********
 // *************************
 /* 全体のスタイル */
@@ -413,13 +421,55 @@ header ul li a {color:inherit}
 }
 // ********contact**********
 // *************************
-.container-profile {
-    position: absolute;
-    top: 30%;
-    right: 0;
-    width: 400px;
-    height: 500px;
+.container-contact {
+    position: relative;
+    padding-top: 100px;
+}
+.container-contact__box {
+    width:70%;
+    height:500px;
+    background: url("../images/white_wasi.jpeg") 0 0 no-repeat/cover;
+    margin:40px auto;
+    position: relative;
+    top: 20%;
+    right: 0px;
+    box-shadow: 0px 0px 0.3px #777;
     padding: 20px;
-    z-index: 1;
+}
+.container-contact__box h3 {
+    font-family: 'Architects Daughter', cursive;
+    text-align: center;
+    padding-top: 20px;
+    text-decoration: underline;
+}
+.container-contact__box p {
+    font-family: 'Architects Daughter', cursive;
+}
+
+.contact {
+    float: left;
+}
+.contact p {
+    margin-bottom: 0;
+}
+.mydata {
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+    transform: rotate(-10deg);
+    margin: 50px 0 0 400px;
+}
+.sns {
+    clear: both;
+    position: absolute;
+    bottom: 50px;
+    right: 0;
+}
+.sns li {
+    display: inline-block;
+}
+.sns a {
+    display: block;
+    padding: 15px;
 }
 
