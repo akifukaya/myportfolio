@@ -16,11 +16,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" type="text/css" />
   <!-- faviconの読み込み -->
   <link rel="icon" href="../html/images/favicon.ico">
-  <!-- swiperの読み込み -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
 </head>
-<body>
+<body id="top">
   <div class="wrapper">
     <div class="container-header">
     <header>
@@ -41,71 +38,255 @@
       <img src="../images/suisai04.png" alt="" width="200px" class="suisai04">
       <img src="../images/suisai04.png" alt="" width="50px" class="suisai04-s">
     </div>
+<!-- サイト 作品 -->
     <div class="work-box">
       <div class="site01">
-          <a href="http://project.zd3f12.sim.zdrv.com/f5f15a9eed345d20b38300650913597a/assets/index.html" target="_blank"><img src="../images/works/Russell.png" alt="ラッセルグドール"></a>
+        <figure class="hover-work">
+          <img src="../images/works/Russell.png" alt="ラッセルグドール">
+          <figcaption>
+            <h2>Russell Goodall</h2>
+            <p>click here</p>
+          </figcaption>
+          <a href="http://project.zd3f12.sim.zdrv.com/f5f15a9eed345d20b38300650913597a/assets/index.html" target="_blank"></a>
+        </figure>
       </div>
       <p><span class="web">WEB</span><br>Japanese Interpreter Russell Goodall<br>
       制作期間：約3週間<br>
       実際の依頼内容からデザイン、コーディングを行いました。<br>
-      通訳翻訳＝「言葉」を扱う職業ということでファーストビューでは文字が流れるようにアニメーションにし印象的になるよう作成しました。</p>
+      通訳翻訳＝「言葉」を扱う職業ということでファーストビューでは文字が流れるアニメーションにし印象的になるよう作成しました。</p>
       </div>
       <div class="work-box">
       <div class="site01">
-          <a href=""><img src="../images/works/skytravel.png" alt="スカイトラベル"></a>
+        <figure class="hover-work">
+          <img src="../images/works/skytravel.png" alt="スカイトラベル">
+          <figcaption>
+            <h2>Sky Travel</h2>
+            <p>click here</p>
+          </figcaption>
+          <a href="http://project.zd3f12.sim.zdrv.com/f5f15a9eed345d20b38300650913597a/skytravel/index.html#" target="_blank"></a>
+        </figure>
       </div>
       <p><span class="web">WEB（授業カリキュラム）</span><br>
       スカイトラベル<br>
-      jQueryライブラリを導入。データのDL、ファイルとコードのミニマム化を行い、カルーセルを実装しました。</p>
+      jQueryライブラリを導入。データのDL、ファイルとコードのミニマム化を行い、カルーセルを実装しました。※制作はトップページのみ</p>
       </div>
+<!-- グラフィック作品 -->
       <div class="work-box__ps">
       <div class="ps">
-        <img src="../images/works/stamp.png" alt="">
-        <p>photoshop</p>
+        <figure class="hover-work btn js-btn-modal" data-id="1">
+        <img src="../images/works/stamp.png" alt="画像01">
+        <figcaption>
+            <p>click here</p>
+          </figcaption>
+        </figure>
+        <div class="overlay" id="overlay"></div>
+        <figure class="modal js-modal" data-id="modal1">
+          <button class="modal-close-btn js-close-btn">
+            <i class="fa fa-times" title="閉じる"></i>
+          </button>
+        <i class="fa fa-times" title="閉じる">
+          <img src="../images/works/stamp.png" alt="画像01">
+        </i>
+      </figure>
       </div>
       <div class="ps">
-        <img src="../images/works/rain_glass.png" alt="">
+        <figure class="hover-work btn js-btn-modal" data-id="2">
+        <img src="../images/works/rain_glass.png" alt="画像02">
+        <figcaption>
+            <p>click here</p>
+          </figcaption>
+        </figure>
+        <div class="overlay" id="overlay"></div>
+        <figure class="modal js-modal" data-id="modal2">
+          <button class="modal-close-btn js-close-btn">
+            <i class="fa fa-times" title="閉じる"></i>
+          </button>
+        <i class="fa fa-times" title="閉じる">
+          <img src="../images/works/rain_glass.png" alt="画像02">
+        </i>
+      </figure>
       </div>
       <div class="ps">
-        <img src="../images/works/retoro_music.png" alt="">
+        <figure class="hover-work btn js-btn-modal" data-id="3">
+        <img src="../images/works/retoro_music.png" alt="画像03">
+        <figcaption>
+            <p>click here</p>
+          </figcaption>
+        </figure>
+        <div class="overlay" id="overlay"></div>
+        <figure class="modal js-modal" data-id="modal3">
+          <button class="modal-close-btn js-close-btn">
+            <i class="fa fa-times" title="閉じる"></i>
+          </button>
+        <i class="fa fa-times" title="閉じる">
+          <img src="../images/works/retoro_music.png" alt="画像03">
+        </i>
+      </figure>
       </div>
       <div class="ps">
-        <img src="../images/works/back_light.png" alt="">
+        <figure class="hover-work btn js-btn-modal" data-id="4">
+        <img src="../images/works/drop_rain.png" alt="画像04">
+        <figcaption>
+            <p>click here</p>
+          </figcaption>
+        </figure>
+        <div class="overlay" id="overlay"></div>
+        <figure class="modal js-modal" data-id="modal4">
+          <button class="modal-close-btn js-close-btn">
+            <i class="fa fa-times" title="閉じる"></i>
+          </button>
+        <i class="fa fa-times" title="閉じる">
+          <img src="../images/works/drop_rain.png" alt="画像04">
+        </i>
+      </figure>
       </div>
       <div class="ps">
-        <img src="../images/works/3photo.png" alt="">
-        <p>photoshop</p>
+        <figure class="hover-work btn js-btn-modal" data-id="5">
+        <img src="../images/works/3photo.png" alt="画像05">
+        <figcaption>
+            <p>click here</p>
+          </figcaption>
+        </figure>
+        <div class="overlay" id="overlay"></div>
+        <figure class="modal js-modal" data-id="modal5">
+          <button class="modal-close-btn js-close-btn">
+            <i class="fa fa-times" title="閉じる"></i>
+          </button>
+        <i class="fa fa-times" title="閉じる">
+          <img src="../images/works/3photo.png" alt="画像05">
+        </i>
+      </figure>
       </div>
       <div class="ps">
-        <img src="../images/works/banner.png" alt="">
+        <figure class="hover-work btn js-btn-modal" data-id="6">
+        <img src="../images/works/banner.png" alt="画像06">
+        <figcaption>
+            <p>click here</p>
+          </figcaption>
+        </figure>
+        <div class="overlay" id="overlay"></div>
+        <figure class="modal js-modal" data-id="modal6">
+          <button class="modal-close-btn js-close-btn">
+            <i class="fa fa-times" title="閉じる"></i>
+          </button>
+        <i class="fa fa-times" title="閉じる">
+          <img src="../images/works/banner.png" alt="画像06">
+        </i>
+      </figure>
       </div>
       <div class="ps">
-        <img src="../images/works/gift_banner.png" alt="">
+        <figure class="hover-work btn js-btn-modal" data-id="7">
+        <img src="../images/works/gift_banner.png" alt="画像07">
+        <figcaption>
+            <p>click here</p>
+          </figcaption>
+        </figure>
+        <div class="overlay" id="overlay"></div>
+        <figure class="modal js-modal" data-id="modal7">
+          <button class="modal-close-btn js-close-btn">
+            <i class="fa fa-times" title="閉じる"></i>
+          </button>
+        <i class="fa fa-times" title="閉じる">
+          <img src="../images/works/gift_banner.png" alt="画像07">
+        </i>
+      </figure>
       </div>
       <div class="ps">
-        <img src="../images/works/banner_fuji.png" alt="">
+        <figure class="hover-work btn js-btn-modal" data-id="8">
+        <img src="../images/works/banner_shose.png" alt="画像08">
+        <figcaption>
+            <p>click here</p>
+          </figcaption>
+        </figure>
+        <div class="overlay" id="overlay"></div>
+        <figure class="modal js-modal" data-id="modal8">
+          <button class="modal-close-btn js-close-btn">
+            <i class="fa fa-times" title="閉じる"></i>
+          </button>
+        <i class="fa fa-times" title="閉じる">
+          <img src="../images/works/banner_shose.png" alt="画像08">
+        </i>
+      </figure>
       </div>
       <div class="ps">
-        <img src="../images/works/banner_shose.png" alt="">
+        <figure class="hover-work btn js-btn-modal" data-id="9">
+        <img src="../images/works/banner_fuji.png" alt="画像09">
+        <figcaption>
+            <p>click here</p>
+          </figcaption>
+        </figure>
+        <div class="overlay" id="overlay"></div>
+        <figure class="modal js-modal" data-id="modal9">
+          <button class="modal-close-btn js-close-btn">
+            <i class="fa fa-times" title="閉じる"></i>
+          </button>
+        <i class="fa fa-times" title="閉じる">
+          <img src="../images/works/banner_fuji.png" alt="画像09">
+        </i>
+      </figure>
       </div>
       <div class="ps">
-        <img src="../images/works/drop_rain.png" alt="">
+        <figure class="hover-work btn js-btn-modal" data-id="10">
+        <img src="../images/works/back_light.png" alt="画像10">
+        <figcaption>
+            <p>click here</p>
+          </figcaption>
+        </figure>
+        <div class="overlay" id="overlay"></div>
+        <figure class="modal js-modal" data-id="modal10">
+          <button class="modal-close-btn js-close-btn">
+            <i class="fa fa-times" title="閉じる"></i>
+          </button>
+        <i class="fa fa-times" title="閉じる">
+          <img src="../images/works/back_light.png" alt="画像10">
+        </i>
+      </figure>
       </div>
       <div class="ps">
-        <img src="../images/works/neon_text.png" alt="">
+        <figure class="hover-work btn js-btn-modal" data-id="11">
+        <img src="../images/works/neon_text.png" alt="画像11">
+        <figcaption>
+            <p>click here</p>
+          </figcaption>
+        </figure>
+        <div class="overlay" id="overlay"></div>
+        <figure class="modal js-modal" data-id="modal11">
+          <button class="modal-close-btn js-close-btn">
+            <i class="fa fa-times" title="閉じる"></i>
+          </button>
+        <i class="fa fa-times" title="閉じる">
+          <img src="../images/works/neon_text.png" alt="画像11">
+        </i>
+      </figure>
       </div>
       <div class="ps">
-        <img src="../images/works/water_color.png" alt="">
+        <figure class="hover-work btn js-btn-modal" data-id="12">
+        <img src="../images/works/water_color.png" alt="画像12">
+        <figcaption>
+            <p>click here</p>
+          </figcaption>
+        </figure>
+        <div class="overlay" id="overlay"></div>
+        <figure class="modal js-modal" data-id="modal12">
+          <button class="modal-close-btn js-close-btn">
+            <i class="fa fa-times" title="閉じる"></i>
+          </button>
+        <i class="fa fa-times" title="閉じる">
+          <img src="../images/works/water_color.png" alt="画像12">
+        </i>
+      </figure>
       </div>
       </div>
       <img src="../images/title.png" alt="fukaya" class="title-work">
       <img src="../images/suisai04.png" alt="絵の具" class="suisai-work">
     </div>
+    <p class="pagetop">
+      <a href="#top"><span>topへ<br>
+      もどる</span></a>
+    </p>
     </div>
-  </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-
 <script src="js/style.js"></script>
 </body>
 </html>
