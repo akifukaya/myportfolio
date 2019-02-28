@@ -296,6 +296,7 @@ header ul li a {color:inherit}
     width: 800px;
     margin: 0 auto;
 }
+// hover effect
 figure.hover-work {
     color: #fff;
     position: relative;
@@ -356,7 +357,7 @@ figure.hover-work a {
     right: 0;
     top: 0;
     bottom: 0;
-    // position: absolute;
+    position: absolute;
     z-index: 1;
 }
 figure.hover-work:hover:after,
@@ -382,8 +383,8 @@ figure.hover-work.hover p {
 .work-box__ps {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     padding-top: 100px;
-    justify-content: center;
 }
 .ps {
     width: 400px;
@@ -402,7 +403,6 @@ button {
   cursor: pointer;
   position: relative;
 }
-
 .btn {
   font-size: 14px;
   line-height: 1.4;
@@ -412,8 +412,8 @@ button {
 .modal {
   display: none;
   position: fixed;
-  top: 20%;
-  left: 30%;
+  top: 13%;
+  left: 21%;
   width: 60%;
   margin: 0 auto;
   padding: 30px;
@@ -424,7 +424,9 @@ button {
   right: 10px;
   top: 10px;
   font-size: 20px;
+  background-color: transparent;
 }
+
 /** Overlay */
 .overlay {
   display: none;
@@ -435,9 +437,8 @@ button {
   bottom: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.7);
+  background-color: rgba(0,0,0,0.2);
 }
-
 .title-work {
     width: 200px;
     height: 200px;
