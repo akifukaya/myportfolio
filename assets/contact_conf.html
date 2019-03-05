@@ -2,8 +2,8 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <meta name="description" content="ポートフォリオ Aki Fukaya">
+  <meta name="keywords" content="portfolio,web,ポートフォリオ,ウェブ制作">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Aki Fukaya</title>
   <!-- 初期化 -->
@@ -15,7 +15,7 @@
   <!-- animeteの読み込み -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" type="text/css" />
   <!-- faviconの読み込み -->
-  <link rel="icon" href="../html/images/favicon.ico">
+  <link rel="icon" href="images/favicon.ico">
 </head>
 <body>
   <div class="wrapper">
@@ -24,52 +24,62 @@
 <!-- PC用メニュー -->
       <nav>
         <ul>
-          <li><a href="index.html"><img src="../images/navi/top.png" alt="top" width="100px"></a></li>
-          <li><a href="work.html"><img src="../images/navi/work.png" alt="work" width="100px"></a></li>
-          <li><a href="skill.html"><img src="../images/navi/skill.png" alt="skill" width="100px"></a></li>
-          <li><a href="profile.html"><img src="../images/navi/profile.png" alt="profile" width="100px"></a></li>
-          <li><a href="contact.html"><img src="../images/navi_waku/mail_waku.png" alt="contact" width="100px"></a></li>
+          <li><a href="index.html"><img src="images/navi/top.png" alt="top" width="100px"></a></li>
+          <li><a href="work.html"><img src="images/navi/work.png" alt="work" width="100px"></a></li>
+          <li><a href="skill.html"><img src="images/navi/skill.png" alt="skill" width="100px"></a></li>
+          <li><a href="profile.html"><img src="images/navi/profile.png" alt="profile" width="100px"></a></li>
+          <li><a href="contact.html"><img src="images/navi_waku/mail_waku.png" alt="contact" width="100px"></a></li>
         </ul>
       </nav>
     </header>
     </div>
     <div class="container-main">
     <div class="main-img">
-      <img class="hansin" src="../images/jinjya.png" alt="train" width="1300px">
+      <img class="hansin" src="images/jinjya.png" alt="train" width="1300px">
     </div>
     <section>
       <div class="container-contact">
         <div class="container-contact__box shadow">
-          <h3>Contact me</h3>
+          <h3>Send OK?</h3>
+          <p class="p_conf">以下の内容でよろしいでしょうか</p>
           <div class="contact">
+          <table>
+            <tr>
+              <th>Name : </th>
+              <td>name</td>
+            </tr>
+            <tr>
+              <th>E-Mail : </th>
+              <td>email</td>
+            </tr>
+            <tr>
+              <th>Message : </th>
+              <td>message</td>
+            </tr>
+          </table>
           <form action="" method="post">
-            <p>Name</p>
-              <input type="text" name="name" size="41" required>
-            <p>E-Mail</p>
-              <input type="email" name="email" size="41" required>
-            <p>Message</p>
-              <textarea name="textarea" cols="40" rows="5" required></textarea></p>
-            <p><input type="submit" value="send">
+            <input type="submit" name="send" value="send" class="input">
+            <input type="submit" name="back" value="back" class="input">
           </form>
           </div>
-          <div class="mydata">
-            <img src="../images/name_stamp.png" width="250" alt="連絡先">
+          <div class="mydata_conf">
+            <img src="images/name_stamp.png" width="250" alt="連絡先">
           </div>
           <div class="sns">
             <ul>
               <li>
-                <a href="https://twitter.com/FukkaTw" target="_blank"><img src="../images/twitter.png" width="50" alt="twitter"></a>
+                <a href="https://twitter.com/FukkaTw" target="_blank"><img src="images/twitter.png" width="50" alt="twitter"></a>
               </li>
               <li>
-                <a href="https://www.instagram.com/hatenaru.insta" target="_blank"><img src="../images/insta.png" width="50" alt="insta"></a>
+                <a href="https://www.instagram.com/hatenaru.insta" target="_blank"><img src="images/insta.png" width="50" alt="insta"></a>
               </li>
           </ul>
         </div>
         </div>
       </div>
-      <a href="index.html">
-      <img src="../images/title.png" alt="fukaya" class="title-skill"></a>
-      <img src="../images/suisai04.png" alt="絵の具" class="suisai-skill">
+      <a href="contact_done.html">
+      <img src="images/title.png" alt="fukaya" class="title-skill"></a>
+      <img src="images/suisai04.png" alt="絵の具" class="suisai-skill">
     </section>
   </div>
   </div>

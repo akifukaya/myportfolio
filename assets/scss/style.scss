@@ -252,7 +252,7 @@ header ul li a {color:inherit}
     height: 150px;
     position: fixed;
     right: 3%;
-    bottom: 30%;
+    bottom: 39%;
     z-index: -1;
 }
 // ********profile**********
@@ -296,8 +296,8 @@ header ul li a {color:inherit}
     width: 100px;
     height: 100px;
     position: absolute;
-    bottom: 43px;
-    right: -6%;
+    bottom: 84px;
+    right: 0;
     z-index: -1;
 }
 // ********works**********
@@ -497,6 +497,7 @@ button {
     font-size: 12px;
     text-decoration: none;
 }
+
 // ********skill**********
 // *************************
 .main-img .hansin {
@@ -613,7 +614,64 @@ button {
     display: block;
     padding: 15px;
 }
-
+//****contact_conf****//
+.p_conf {
+    margin: 0;
+    text-align: center;
+}
+.contact table {
+    height: 300px;
+    table-layout: auto;
+}
+.contact table th, .input {
+    font-family: 'Architects Daughter', cursive;;
+}
+.input {
+    margin-right: 20px;
+}
+.mydata_conf {
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+    transform: rotate(-10deg);
+    margin: 8px 0 0 400px;
+}
+//****contact_done****//
+.p_done {
+    text-align: center;
+    margin-top: 250px;
+}
+.sns_done {
+    clear: both;
+    position: absolute;
+    bottom: -20px;
+    right: 16%;
+}
+.sns_done li {
+    display: inline-block;
+}
+.sns_done a {
+    display: block;
+    padding: 15px;
+}
+.post-kitte {
+    position: absolute;
+    right: 15px;
+    transform: rotate(-3deg);
+}
+.post-stamp {
+    position: absolute;
+    right: 0;
+}
+//****contact_error****//
+.p_error {
+    padding-top: 180px;
+}
+.post-error {
+    position: absolute;
+    right: 20px;
+    transform: rotate(-3deg);
+}
 // ********footer**********
 // *************************
 .wrapper {
