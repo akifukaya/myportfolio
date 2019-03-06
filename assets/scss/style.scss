@@ -140,13 +140,15 @@ header ul li:last-child {border-bottom:none
 }
 // ************index****************
 // ********************************
-.main-img .tiger01 {
-    z-index: 1;
+.container-main .main-img > img, .tiger12 {
     position: absolute;
-    top: -15px;
+    top: 0;
     left: -28%;
-    transform: scale(1.8);
+    transform: scale(1.4);
     opacity: 0;
+    z-index: 1;
+}
+.main-img .tiger01 {
     animation: a 1.5s 1s forwards;
 }
 @keyframes a {
@@ -154,12 +156,6 @@ header ul li:last-child {border-bottom:none
     100% {opacity: 1;}
 }
 .main-img .tiger02 {
-    z-index: 1;
-    position: absolute;
-    top: -15px;
-    left: -28%;
-    transform: scale(1.8);
-    opacity: 0;
     animation: b 2.5s 2s forwards;
 }
 @keyframes b {
@@ -167,12 +163,6 @@ header ul li:last-child {border-bottom:none
     100% {opacity: 1;}
 }
 .main-img .tiger03 {
-    z-index: 1;
-    position: absolute;
-    top: -15px;
-    left: -28%;
-    transform: scale(1.8);
-    opacity: 0;
     animation: c 3s 2.5s forwards;
 }
 @keyframes c {
@@ -180,12 +170,6 @@ header ul li:last-child {border-bottom:none
     100% {opacity: 1;}
 }
 .main-img .tiger04 {
-    z-index: 1;
-    position: absolute;
-    top: -15px;
-    left: -28%;
-    transform: scale(1.8);
-    opacity: 0;
     animation: d 3.5s 3s forwards;
 }
 @keyframes d {
@@ -193,12 +177,6 @@ header ul li:last-child {border-bottom:none
     100% {opacity: 1;}
 }
 .main-img .tiger05 {
-    z-index: 1;
-    position: absolute;
-    top: -15px;
-    left: -28%;
-    transform: scale(1.8);
-    opacity: 0;
     animation: e 4.5s 4s forwards;
 }
 @keyframes e {
@@ -206,12 +184,6 @@ header ul li:last-child {border-bottom:none
     100% {opacity: 1;}
 }
 .main-img .tiger06 {
-    z-index: 1;
-    position: absolute;
-    top: -15px;
-    left: -28%;
-    transform: scale(1.8);
-    opacity: 0;
     animation: f 5s 4.5s forwards;
 }
 @keyframes f {
@@ -219,12 +191,6 @@ header ul li:last-child {border-bottom:none
     100% {opacity: 1;}
 }
 .main-img .tiger07 {
-    z-index: 1;
-    position: absolute;
-    top: -15px;
-    left: -28%;
-    transform: scale(1.8);
-    opacity: 0;
     animation: g 6s 5s forwards;
 }
 @keyframes g {
@@ -232,12 +198,6 @@ header ul li:last-child {border-bottom:none
     100% {opacity: 1;}
 }
 .main-img .tiger08 {
-    z-index: 1;
-    position: absolute;
-    top: -15px;
-    left: -28%;
-    transform: scale(1.8);
-    opacity: 0;
     animation: h 6.5s 6s forwards;
 }
 @keyframes h {
@@ -245,12 +205,6 @@ header ul li:last-child {border-bottom:none
     100% {opacity: 1;}
 }
 .main-img .tiger09 {
-    z-index: 1;
-    position: absolute;
-    top: -15px;
-    left: -28%;
-    transform: scale(1.8);
-    opacity: 0;
     animation: i 7s 6.5s forwards;
 }
 @keyframes i {
@@ -258,12 +212,6 @@ header ul li:last-child {border-bottom:none
     100% {opacity: 1;}
 }
 .main-img .tiger10 {
-    z-index: 1;
-    position: absolute;
-    top: -15px;
-    left: -28%;
-    transform: scale(1.8);
-    opacity: 0;
     animation: j 8s 7s forwards;
 }
 @keyframes j {
@@ -271,12 +219,6 @@ header ul li:last-child {border-bottom:none
     100% {opacity: 1;}
 }
 .main-img .tiger11 {
-    z-index: 1;
-    position: absolute;
-    top: -15px;
-    left: -28%;
-    transform: scale(1.8);
-    opacity: 0;
     animation: k 8.5s 8s forwards;
 }
 @keyframes k {
@@ -284,13 +226,7 @@ header ul li:last-child {border-bottom:none
     100% { opacity: 1; }
 }
 .tiger12 {
-    z-index: 1;
-    position: absolute;
-    top: 15px;
-    left: -28%;
-    transform: scale(1.6);
-    opacity:0;
-    animation: late 3s 15s ease-in-out;
+    animation: late 3s 13s ease-in-out;
     object-fit: cover;
 }
 @keyframes late {
@@ -366,51 +302,22 @@ header ul li:last-child {border-bottom:none
         bottom: 14%;
     }
 }
-// ********profile**********
-// *************************
-.main-img .watasi {
-    z-index: -1;
-    position: absolute;
-    top: 0px;
-    left: -10%;
-    transform: scale(0.8);
-    width: 500px;
-    height: 886px;
-    object-fit: contain;
+.footer_index {
+    padding-top: 791px;
 }
-.container-profile {
-    padding-top: 100px;
-    z-index: 2;
+@media screen and (max-width: 768px) {
+    .footer_index {
+        padding-top: 985px;
+        text-align: center;
+    }
 }
-.container-profile h3,
-.container-profile h4,
-.container-profile p {
-    padding-left: 40%;
-    margin: 20px 0 0 0;
+@media screen and (max-width: 480px) {
+    .footer_index {
+        padding-top: 635px;
+        text-align: center;
+    }
 }
-.container-profile h3 {
-    padding-top: 50px;
-}
-.container-profile p {
-    margin: 0;
-    line-height: 1.5;
-    font-size: 1em;
-}
-.title-profile {
-    width: 200px;
-    height: 200px;
-    position: absolute;
-    bottom: -5%;
-    right: 0;
-}
-.suisai-profile {
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    bottom: 84px;
-    right: 0;
-    z-index: -1;
-}
+
 // ********works**********
 // *************************
 .main-img__work {
@@ -586,15 +493,26 @@ button {
     width: 200px;
     height: 200px;
     position: absolute;
-    right: 0;
+    right: 3%;
     bottom: -4%;
 }
-
+.suisai04 {
+    width: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.suisai04-s {
+    width: 100px;
+    position: absolute;
+    top: 0;
+    left: 13%;
+}
 .pagetop {
     display: none;
     position: fixed;
-    bottom: 171px;
-    right: 18px;
+    bottom: 17%;
+    right: 2%;
 }
 .pagetop a {
     display: block;
@@ -637,6 +555,20 @@ button {
         padding-top: 100px;
         width: 100%;
     }
+    .title-work {
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        right: 4%;
+        bottom: -5%;
+    }
+    .footer_work {
+        padding-top: 130px;
+    }
+    .suisai04-s {
+        position: absolute;
+        left: 16%;
+    }
 }
 @media screen and (max-width: 480px) {
     .site01+p {
@@ -647,7 +579,7 @@ button {
         width: 100%;
         padding: 0 10px;
     }
-    .overlay {
+    figcaption {
         display: none;
     }
     figure.hover-work::after {
@@ -656,51 +588,254 @@ button {
     button {
         display: none;
     }
+    .suisai04 {
+        width: 150px;
+    }
+    .suisai04-s {
+        width: 80px;
+        position: absolute;
+        left: 24%;
+    }
+    .title-work {
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        right: 31%;
+        bottom: -4%;
+    }
+    .footer_work {
+        padding-top: 143px;
+    }
 }
 // ********skill**********
 // *************************
-.main-img .hansin {
+.container-main .main-img .hansin {
     z-index: -1;
     position: absolute;
-    top: -100px;
-    left: -60%;
+    top: 1%;
+    left: -24%;
     opacity: 0.8;
+    transform: scale(1.1);
 }
 .container-skill {
-    padding-top: 100px;
+    padding-top: 73px;
 }
 .container-skill h3, .container-skill p {
     font-family: 'Architects Daughter', cursive;
     text-align: center;
 }
 .container-skill h3 {
+    font-size: 2rem;
     padding-top: 50px;
     text-decoration: underline;
 }
 .container-skill p {
+    font-size: 1.5rem;
     margin-top: 70px;
     line-height: 2;
     font-weight: bold;
-    font-size: 1.5em;
 }
-
 .title-skill {
     width: 200px;
     height: 200px;
     position: absolute;
-    bottom: 0;
-    right: 6%;
+    bottom: -29%;
+    right: 4%;
 }
 .suisai-skill {
     width: 100px;
     height: 100px;
     position: absolute;
-    bottom: 10%;
-    right: 0;
+    bottom: -16%;
+    right: -2%;
     z-index: -1;
+}
+.footer_skill {
+    padding-top: 159px;
+}
+@media screen and (max-width: 768px) {
+    .container-skill {
+        padding-top: 167px;
+    }
+    .title-skill {
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        bottom: -46%;
+        right: 8%;
+    }
+    .suisai-skill {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        bottom: -34%;
+        right: 0;
+        z-index: -1;
+    }
+    .footer_skill {
+        padding-top: 258px;
+}
+}
+@media screen and (max-width: 480px) {
+    .container-skill h3 {
+        font-size: 1.5rem;
+    }
+    .container-skill p {
+        font-size: 1rem;
+    }
+    .container-skill {
+        padding-top: 68px;
+    }
+    .title-skill {
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        bottom: -44%;
+        right: 30%;
+    }
+    .suisai-skill {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        bottom: -32%;
+        right: 12%;
+        z-index: -1;
+    }
+    .footer_skill {
+        padding-top: 145px;
+    }
+}
+// ********profile**********
+// *************************
+.container-main .main-img .watasi {
+    z-index: -1;
+    position: absolute;
+    top: -29%;
+    left: -11%;
+    opacity: 0.8;
+    transform: scale(0.6);
+}
+.container-profile {
+    padding-top: 100px;
+    z-index: 2;
+}
+.container-profile h3,
+.container-profile h4,
+.container-profile p {
+    padding: 0 15% 0 40%;
+    margin: 20px 0 0 0;
+    font-size: 0.8rem;
+}
+.container-profile h3 {
+    padding-top: 50px;
+}
+.container-profile p {
+    margin: 0;
+    line-height: 1.5;
+}
+.title-prof {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    bottom: -37%;
+    right: 4%;
+}
+.suisai-prof {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: -23%;
+    right: -2%;
+    z-index: -1;
+}
+.footer_prof {
+    padding-top: 220px;
+}
+@media screen and (max-width: 768px) {
+    .container-main .main-img .watasi {
+        z-index: -1;
+        position: absolute;
+        top: -55%;
+        left: -27%;
+        opacity: 0.8;
+        transform: scale(0.4);
+    }
+    .container-profile {
+        padding-top: 183px;
+    }
+    .container-profile h3,
+.container-profile h4,
+.container-profile p {
+        padding: 0 8% 0 40%;
+        font-size: 0.8rem;
+    }
+    .title-prof {
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        bottom: -60%;
+        right: 8%;
+    }
+    .suisai-prof {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        bottom: -47%;
+        right: 0%;
+        z-index: -1;
+    }
+    .footer_prof {
+        padding-top: 343px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .container-main .main-img .watasi {
+        z-index: -1;
+        position: absolute;
+        top: 18%;
+        left: -29%;
+        opacity: 0.4;
+        transform: scale(1.1);
+    }
+    .container-profile {
+        padding-top: 50px;
+    }
+    .container-profile h3,
+.container-profile h4,
+.container-profile p {
+        padding: 0 15% 0 15%;
+        font-size: 0.8rem;
+        line-height: 1.8;
+    }
+    .title-prof {
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        bottom: -62%;
+        right: 30%;
+    }
+    .suisai-prof {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        bottom: -54%;
+        right: 12%;
+        z-index: -1;
+    }
+    .footer_prof {
+        padding-top: 402px;
+    }
 }
 // ********contact**********
 // *************************
+.container-main .main-img .ebe {
+    z-index: -1;
+    position: absolute;
+    top: -19%;
+    left: -38%;
+    opacity: 0.8;
+    transform: scale(1);
+}
 .container-contact {
     position: relative;
     padding-top: 100px;
@@ -719,11 +854,13 @@ button {
 .container-contact__box h3 {
     font-family: 'Architects Daughter', cursive;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 15px;
     text-decoration: underline;
+    font-size: 1.5rem;
 }
 .container-contact__box p {
     font-family: 'Architects Daughter', cursive;
+    font-size: 1rem;
 }
 .shadow {
     position: relative;
@@ -749,22 +886,30 @@ button {
 }
 .contact {
     float: left;
+    margin-left: 40px;
 }
 .contact p {
     margin-bottom: 0;
+}
+input {
+    width: 300px;
+    height: 30px;
+}
+textarea {
+    width: 300px;
 }
 .mydata {
     overflow: hidden;
     width: 300px;
     height: 300px;
     transform: rotate(-10deg);
-    margin: 50px 0 0 400px;
+    margin: 50px 0 0 370px;
 }
 .sns {
     clear: both;
     position: absolute;
-    bottom: 50px;
-    right: 0;
+    bottom: 38px;
+    right: 5%;
 }
 .sns li {
     display: inline-block;
@@ -773,20 +918,146 @@ button {
     display: block;
     padding: 15px;
 }
+.title-contact {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    bottom: -29%;
+    right: 4%;
+}
+.suisai-contact {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: -16%;
+    right: -2%;
+    z-index: -1;
+}
+.footer_contact {
+    padding-top: 112px;
+}
+@media screen and (max-width: 768px) {
+    .container-main .main-img .ebe {
+        display: none;
+    }
+    .container-contact {
+        padding-top: 124px;
+    }
+    .container-contact__box {
+        width: 100%;
+        height: 600px;
+    }
+    .mydata {
+        margin: 50px 0 0 425px;
+    }
+    .contact input:last-child {
+        border: 1px solid transparent;
+        margin-top: 20px;
+    }
+    .sns {
+        clear: both;
+        position: absolute;
+        bottom: 117px;
+        right: 6%;
+    }
+    .title-contact {
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        bottom: -32%;
+        right: 5%;
+    }
+    .suisai-contact {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        bottom: -21%;
+        right: 0;
+        z-index: -1;
+        transform: scale(.7);
+    }
+    .footer_contact {
+    padding-top: 182px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .container-main .main-img .ebe {
+    display: none;
+}
+    .contact {
+        position: relative;
+    }
+    .container-contact {
+        width: 100%;
+        padding-top: 54px;
+    }
+    .container-contact__box {
+        width: 100%;
+        height: 600px;
+    }
+    .mydata {
+        position: absolute;
+        bottom: -15%;
+        left: -118%;
+        transform: scale(.6);
+    }
+    .contact {
+        margin-left: 20px;
+    }
+    .contact input:last-child {
+        border: 1px solid transparent;
+        margin-top: 20px;
+    }
+    .sns {
+        position: absolute;
+        bottom: 0%;
+        right: 6%;
+        padding: 0 10px;
+    }
+    .sns a {
+        padding: 0;
+    }
+    .title-contact {
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        bottom: -25%;
+        right: 31%;
+    }
+    .suisai-contact {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        bottom: -18%;
+        right: 16%;
+        z-index: -1;
+        transform: scale(.7);
+    }
+    .footer_contact {
+    padding-top: 92px;
+    }
+}
 //****contact_conf****//
 .p_conf {
     margin: 0;
     text-align: center;
+    font-size: 1rem;
 }
 .contact table {
-    height: 300px;
+    height: 200px;
     table-layout: auto;
 }
-.contact table th, .input {
-    font-family: 'Architects Daughter', cursive;;
+.contact table th, .input_btn {
+    font-family: 'Architects Daughter', cursive;
+    font-size: 1rem;
 }
-.input {
-    margin-right: 20px;
+.contact table td {
+    font-size: 1rem;
+}
+.input_btn {
+    width: 80px;
+    margin: 40px 50px 40px 0;
+    font-size: 1rem;
 }
 .container-contact__box .post-kitte {
     position: absolute;
@@ -794,10 +1065,33 @@ button {
     top: 10px;
     transform: rotate(-3deg);
 }
+@media screen and (max-width: 768px) {
+    .container-contact .post-kitte {
+        transform: scale(0.5), transrate(-3deg);
+    }
+    .input_btn {
+        border: 1px solid transparent;
+        margin: 50px 0 0 40px;
+    }
+    .contact table th, .contact table td, .input_btn {
+        font-size: 1.4rem;
+    }
+    .contact table {
+        margin: 40px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .container-contact__box .post-kitte {
+        position: absolute;
+        right: -31px;
+        top: -18px;
+        transform: scale(.4);
+    }
+}
 //****contact_done****//
 .p_done {
     text-align: center;
-    margin-top: 250px;
+    margin-top: 232px;
 }
 .sns_done {
     clear: both;
@@ -821,30 +1115,27 @@ button {
     position: absolute;
     right: 0;
 }
+@media screen and (max-width: 768px) {
+    .p_done {
+        font-size: 1.4rem;
+    }
+}
+@media screen and (max-width: 480px) {
+    .post-stamp {
+        transform: scale(.5);
+        position: absolute;
+        top: 0%;
+        right: -20%;
+    }
+}
 //****contact_error****//
 .p_error {
     padding-top: 180px;
+    text-align: center;
 }
 .post-error {
     position: absolute;
     right: 20px;
     transform: rotate(-3deg);
 }
-// ********footer**********
-// *************************
-.footer_index {
-    padding-top: 845px;
 
-}
-@media screen and (max-width: 768px) {
-    .footer_index {
-        padding-top: 985px;
-        text-align: center;
-    }
-}
-@media screen and (max-width: 480px) {
-    .footer_index {
-        padding-top: 635px;
-        text-align: center;
-    }
-}

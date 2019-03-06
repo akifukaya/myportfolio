@@ -33,29 +33,10 @@ $(".hover").mouseleave(
     }
 );
 
-// モーダル実装
- $('.js-btn-modal').on('click', function(){
-  $('.overlay').fadeIn();
-  var id = $(this).data('id');
-  $('.js-modal[data-id="modal' + id + '"]').fadeIn();
-});
-
-$('.js-close-btn').on('click', function(){
-  $('.overlay').fadeOut();
-  $('.js-modal').fadeOut();
-});
-
-if(!navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/)){
-  $(function(){
-  $(".hover").mouseleave(
-    function () {
-        $(this).removeClass("hover");
-    }
-);
-});
-}
-if(!navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/)){
-  $(function(){
+// モーダル実装(480px以上なら処理)
+var windowWidth = $(window).width();
+var windowSm = 480;
+if (windowWidth > windowSm) {
   $('.js-btn-modal').on('click', function(){
   $('.overlay').fadeIn();
   var id = $(this).data('id');
@@ -65,6 +46,5 @@ if(!navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/)){
 $('.js-close-btn').on('click', function(){
   $('.overlay').fadeOut();
   $('.js-modal').fadeOut();
-});
 });
 }
