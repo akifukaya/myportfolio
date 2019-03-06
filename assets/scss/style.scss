@@ -17,7 +17,8 @@ body {
     padding: 0;
     margin: 0 auto;
     text-align: center;
-    min-height: 870px;
+    font-size: 10px;
+    -webkit-text-size-adjust: 100%;
 }
 a {
   text-decoration: none;
@@ -30,7 +31,6 @@ header {
     width:100%;
     z-index:2;
     position:fixed;
-    background:rgba(255,255,255,.7);
     display:table;
     font-size:0;
     line-height:0;
@@ -45,6 +45,7 @@ nav {
 header ul {
     font-size:45px;
     line-height:1;
+    background-color: rgba(255,255,255,.7);
     margin:0 10px 10px 0;
 }
 header ul li {
@@ -52,27 +53,101 @@ header ul li {
     display:inline-block;
 }
 header ul li:last-child::after {content:''}
-header ul li a {color:inherit}
-
+header ul li a {
+    color:inherit;
+    height: 48px;
+}
+// モバイル用メニュー
+#navToggle {
+    display:none;
+    position:absolute;
+    right:13px;
+    top:13px;
+    width:30px;
+    height:25px;
+    cursor:pointer}
+#navToggle div {position:relative}
+#navToggle span {
+    display:block;
+    position:absolute;
+    width:100%;
+    border-bottom:solid 3px #999;
+    transition: .35s ease-in-out}
+#navToggle span:nth-child(1) {top:0}
+#navToggle span:nth-child(2) {top:11px}
+#navToggle span:nth-child(3) {top:22px}
+@media screen and (max-width: 480px) {
+header nav {
+    position: absolute;
+    right: 0;
+    top: -300px;
+    padding:0 10px;
+    transition:.5s ease-in-out;
+    text-align:left
+}
+header ul li {
+    display:block;
+    margin:0;
+    line-height:3
+}
+header ul li a {
+    display: block;
+    height: 50px;
+}
+header ul li a img {
+    display: block;
+    height: 50px;
+}
+header ul li::after {content:''}
+header ul li:last-child {border-bottom:none
+}
+#navToggle {display:block}
+.openNav #navToggle span:nth-child(1) {
+    top: 11px;
+    transform:rotate(-45deg)
+}
+.openNav #navToggle span:nth-child(2),
+.openNav #navToggle span:nth-child(3) {
+    top: 11px;
+    transform:rotate(45deg)
+}
+.openNav nav {
+    transform: translateY(351px)}
+}
 // ************共通****************
 // ***********************************
+.wrapper {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
 .container-main {
     position: relative;
     width: 1000px;
-    height: 830px;
+    // height: 830px;
     margin: 0 auto;
     text-align: left;
 }
+@media screen and (max-width: 768px) {
+    .container-main {
+    width: 100%;
+    }
+}
+@media screen and (max-width: 480px) {
+    .container-main {
+    width: 100%;
+    }
+}
+// ************index****************
+// ********************************
 .main-img .tiger01 {
     z-index: 1;
     position: absolute;
-    top: -200px;
-    left: -60%;
+    top: -15px;
+    left: -28%;
+    transform: scale(1.8);
     opacity: 0;
     animation: a 1.5s 1s forwards;
-    width: 1500px;
-    height: 1000px;
-    object-fit: cover;
 }
 @keyframes a {
     0% { opacity: 1;}
@@ -81,8 +156,9 @@ header ul li a {color:inherit}
 .main-img .tiger02 {
     z-index: 1;
     position: absolute;
-    top: -250px;
-    left: -60%;
+    top: -15px;
+    left: -28%;
+    transform: scale(1.8);
     opacity: 0;
     animation: b 2.5s 2s forwards;
 }
@@ -93,8 +169,9 @@ header ul li a {color:inherit}
 .main-img .tiger03 {
     z-index: 1;
     position: absolute;
-    top: -250px;
-    left: -60%;
+    top: -15px;
+    left: -28%;
+    transform: scale(1.8);
     opacity: 0;
     animation: c 3s 2.5s forwards;
 }
@@ -105,8 +182,9 @@ header ul li a {color:inherit}
 .main-img .tiger04 {
     z-index: 1;
     position: absolute;
-    top: -250px;
-    left: -60%;
+    top: -15px;
+    left: -28%;
+    transform: scale(1.8);
     opacity: 0;
     animation: d 3.5s 3s forwards;
 }
@@ -117,8 +195,9 @@ header ul li a {color:inherit}
 .main-img .tiger05 {
     z-index: 1;
     position: absolute;
-    top: -250px;
-    left: -60%;
+    top: -15px;
+    left: -28%;
+    transform: scale(1.8);
     opacity: 0;
     animation: e 4.5s 4s forwards;
 }
@@ -129,8 +208,9 @@ header ul li a {color:inherit}
 .main-img .tiger06 {
     z-index: 1;
     position: absolute;
-    top: -250px;
-    left: -60%;
+    top: -15px;
+    left: -28%;
+    transform: scale(1.8);
     opacity: 0;
     animation: f 5s 4.5s forwards;
 }
@@ -141,8 +221,9 @@ header ul li a {color:inherit}
 .main-img .tiger07 {
     z-index: 1;
     position: absolute;
-    top: -250px;
-    left: -60%;
+    top: -15px;
+    left: -28%;
+    transform: scale(1.8);
     opacity: 0;
     animation: g 6s 5s forwards;
 }
@@ -153,8 +234,9 @@ header ul li a {color:inherit}
 .main-img .tiger08 {
     z-index: 1;
     position: absolute;
-    top: -250px;
-    left: -60%;
+    top: -15px;
+    left: -28%;
+    transform: scale(1.8);
     opacity: 0;
     animation: h 6.5s 6s forwards;
 }
@@ -165,8 +247,9 @@ header ul li a {color:inherit}
 .main-img .tiger09 {
     z-index: 1;
     position: absolute;
-    top: -250px;
-    left: -60%;
+    top: -15px;
+    left: -28%;
+    transform: scale(1.8);
     opacity: 0;
     animation: i 7s 6.5s forwards;
 }
@@ -177,8 +260,9 @@ header ul li a {color:inherit}
 .main-img .tiger10 {
     z-index: 1;
     position: absolute;
-    top: -250px;
-    left: -60%;
+    top: -15px;
+    left: -28%;
+    transform: scale(1.8);
     opacity: 0;
     animation: j 8s 7s forwards;
 }
@@ -189,8 +273,9 @@ header ul li a {color:inherit}
 .main-img .tiger11 {
     z-index: 1;
     position: absolute;
-    top: -250px;
-    left: -60%;
+    top: -15px;
+    left: -28%;
+    transform: scale(1.8);
     opacity: 0;
     animation: k 8.5s 8s forwards;
 }
@@ -201,12 +286,11 @@ header ul li a {color:inherit}
 .tiger12 {
     z-index: 1;
     position: absolute;
-    top: -150px;
-    left: -55%;
+    top: 15px;
+    left: -28%;
+    transform: scale(1.6);
     opacity:0;
     animation: late 3s 15s ease-in-out;
-    width: 1417px;
-    height: 1000px;
     object-fit: cover;
 }
 @keyframes late {
@@ -214,33 +298,13 @@ header ul li a {color:inherit}
     50% { opacity: 1; }
     100% { opacity: 0; }
 }
-
-
-.main-img .suisai04 {
-    z-index: 1;
-    position: absolute;
-    top: -20px;
-    left: -80px;
-}
-.main-img .suisai04-s {
-    z-index: 1;
-    position: absolute;
-    top: -5px;
-    left: 40px;
-}
-.main-img .suisai03 {
-    z-index: 1;
-    position: absolute;
-    top: 50%;
-    left: -40px;
-}
 .main-name {
     width: 300px;
     height: 300px;
     background: url("../images/title.png") 0 0 no-repeat/contain;
     z-index: 1;
     position: fixed;
-    top: 40%;
+    bottom: 7%;
     right: 10%;
 }
 .main-name h1, .main-name p {
@@ -252,8 +316,55 @@ header ul li a {color:inherit}
     height: 150px;
     position: fixed;
     right: 3%;
-    bottom: 39%;
+    bottom: 22%;
     z-index: -1;
+}
+@media screen and (max-width: 768px) {
+    .main-img {
+        width: 100%;
+        min-height: 100%;
+    }
+    .container-main .main-img > img, .tiger12 {
+        width: 100%;
+        position: absolute;
+        top: 10%;
+        left: -31%;
+        transform: scale(1.5);
+    }
+    .main-name {
+    position: fixed;
+    top: 59%;
+    right: 3%;
+    }
+    .inc {
+        position: fixed;
+        right: 28%;
+        bottom: 26%;
+    }
+}
+@media screen and (max-width: 480px) {
+    .container-main .main-img {
+        width: 100%;
+    }
+    .container-main .main-img > img, .tiger12 {
+        width: 100%;
+        position: fixed;
+        top: 17%;
+        left: -31%;
+        transform: scale(1.6);
+    }
+    .main-name {
+        position: fixed;
+        bottom: 52%;
+        right: -12%;
+        transform: scale(0.6);
+    }
+    .inc {
+        transform: scale(0.6);
+        position: fixed;
+        right: 25%;
+        bottom: 14%;
+    }
 }
 // ********profile**********
 // *************************
@@ -302,21 +413,31 @@ header ul li a {color:inherit}
 }
 // ********works**********
 // *************************
+.main-img__work {
+    width: 100%;
+    height: 50px;
+}
 .work-box {
     width: 800px;
-    padding-top: 100px;
+    padding-top: 50px;
     margin: 0 auto;
 }
 .site01+p {
-    width: 800px;
+    font-size: 0.8rem;
+    width: 700px;
     margin: 0 auto;
+}
+.hover-work img {
+    width: 800px;
+    transform: scale(0.9);
+
 }
 // hover effect
 figure.hover-work {
     color: #fff;
     position: relative;
     overflow: hidden;
-    margin: 10px;
+    margin: 0 auto;
     width: 100%;
     color: #000;
     text-align: center;
@@ -411,6 +532,11 @@ figure.hover-work.hover p {
 .ps img {
     width: 100%;
 }
+.ps+p {
+    font-size: 0.8rem;
+    width: 700px;
+    margin: 0 auto;
+}
 button {
   margin: 0;
   border: none;
@@ -461,7 +587,7 @@ button {
     height: 200px;
     position: absolute;
     right: 0;
-    bottom: -350%;
+    bottom: -4%;
 }
 
 .pagetop {
@@ -497,7 +623,40 @@ button {
     font-size: 12px;
     text-decoration: none;
 }
-
+.footer_work {
+    padding-top: 105px;
+}
+@media screen and (max-width: 768px) {
+    .work-box {
+        width: 100%;
+    }
+    .work-box__ps {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-top: 100px;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 480px) {
+    .site01+p {
+        width: 100%;
+        padding: 0 10px;
+    }
+    .ps+p {
+        width: 100%;
+        padding: 0 10px;
+    }
+    .overlay {
+        display: none;
+    }
+    figure.hover-work::after {
+    display: none;
+    }
+    button {
+        display: none;
+    }
+}
 // ********skill**********
 // *************************
 .main-img .hansin {
@@ -629,12 +788,11 @@ button {
 .input {
     margin-right: 20px;
 }
-.mydata_conf {
-    overflow: hidden;
-    width: 300px;
-    height: 300px;
-    transform: rotate(-10deg);
-    margin: 8px 0 0 400px;
+.container-contact__box .post-kitte {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    transform: rotate(-3deg);
 }
 //****contact_done****//
 .p_done {
@@ -674,14 +832,19 @@ button {
 }
 // ********footer**********
 // *************************
-.wrapper {
-    position: relative;
-    width: 100%;
-    height: auto;
+.footer_index {
+    padding-top: 845px;
+
 }
-.footer {
-    width: 100%;
-    height: 60px;
-    position: absolute;
-    bottom: -360%;
+@media screen and (max-width: 768px) {
+    .footer_index {
+        padding-top: 985px;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 480px) {
+    .footer_index {
+        padding-top: 635px;
+        text-align: center;
+    }
 }

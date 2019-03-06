@@ -1,3 +1,9 @@
+// ハンバーガーメニュー
+$(function() {
+    $('#navToggle').click(function(){
+        $('header').toggleClass('openNav');
+    });
+});
 // 戻るボタン
 $(function() {
     var $pageTop = $(".pagetop")
@@ -38,3 +44,27 @@ $('.js-close-btn').on('click', function(){
   $('.overlay').fadeOut();
   $('.js-modal').fadeOut();
 });
+
+if(!navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/)){
+  $(function(){
+  $(".hover").mouseleave(
+    function () {
+        $(this).removeClass("hover");
+    }
+);
+});
+}
+if(!navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/)){
+  $(function(){
+  $('.js-btn-modal').on('click', function(){
+  $('.overlay').fadeIn();
+  var id = $(this).data('id');
+  $('.js-modal[data-id="modal' + id + '"]').fadeIn();
+});
+
+$('.js-close-btn').on('click', function(){
+  $('.overlay').fadeOut();
+  $('.js-modal').fadeOut();
+});
+});
+}
