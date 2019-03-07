@@ -46,7 +46,8 @@ header ul {
     font-size:45px;
     line-height:1;
     background-color: rgba(255,255,255,.7);
-    margin:0 10px 10px 0;
+    margin: 0 10px 0 0;
+    padding: 0 20px;
 }
 header ul li {
     margin-left:3px;
@@ -575,6 +576,9 @@ button {
         width: 100%;
         padding: 0 10px;
     }
+    .ps {
+        margin: 20px auto;
+    }
     .ps+p {
         width: 100%;
         padding: 0 10px;
@@ -891,9 +895,18 @@ button {
 .contact p {
     margin-bottom: 0;
 }
+.contact .error {
+    font-size: 0.5rem;
+    color: #ef9d7e;
+    padding: 0;
+    margin: 0;
+}
 input {
     width: 300px;
     height: 30px;
+}
+.input_send {
+    background-color: #ccc;
 }
 textarea {
     width: 300px;
@@ -999,7 +1012,7 @@ textarea {
         position: absolute;
         bottom: -15%;
         left: -118%;
-        transform: scale(.6);
+        transform: scale(.5);
     }
     .contact {
         margin-left: 20px;
@@ -1016,6 +1029,9 @@ textarea {
     }
     .sns a {
         padding: 0;
+    }
+    .sns li {
+        margin: 0 18px 10px 0;
     }
     .title-contact {
         width: 150px;
@@ -1087,6 +1103,10 @@ textarea {
         top: -18px;
         transform: scale(.4);
     }
+    .input_btn {
+        font-size: 0.8rem;
+        background-color: #ccc;
+    }
 }
 //****contact_done****//
 .p_done {
@@ -1126,6 +1146,11 @@ textarea {
         position: absolute;
         top: 0%;
         right: -20%;
+    }
+    .sns_done {
+        transform: scale(.9);
+        position: absolute;
+        right: -2%;
     }
 }
 //****contact_error****//

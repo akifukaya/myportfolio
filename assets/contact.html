@@ -49,15 +49,16 @@
         <div class="container-contact">
           <div class="container-contact__box shadow">
             <h3>Contact me</h3>
+            <p>*すべてご入力ください</p>
             <div class="contact">
               <form action="" method="post">
-                <p>Name</p>
+                <p>Name* <span class="error"></span></p>
                 <input type="text" name="name" size="41" required>
-                <p>E-Mail</p>
+                <p>E-Mail* <span class="error"></span></p>
                 <input type="email" name="email" size="41" required>
-                <p>Message</p>
+                <p>Message* <span class="error"></span></p>
                 <textarea name="textarea" cols="40" rows="5" required></textarea></p>
-                <p><input type="submit" value="send"></p>
+                <p><input type="submit" value="send" class="input_send"></p>
               </form>
             </div>
             <div class="mydata">
@@ -75,8 +76,8 @@
             </div>
           </div>
         </div>
-        <a href="contact_conf.html">
-        <img src="images/title.png" alt="fukaya" class="title-contact"></a>
+        <div ><a href="contact_conf.html">
+        <img src="images/title.png" alt="fukaya" class="title-contact"></a></div>
         <img src="images/suisai04.png" alt="絵の具" class="suisai-contact">
     </section>
   </div>
