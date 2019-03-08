@@ -28,7 +28,7 @@
           <li><a href="work.html"><img src="images/navi/work.png" alt="work" width="100px"></a></li>
           <li><a href="skill.html"><img src="images/navi/skill.png" alt="skill" width="100px"></a></li>
           <li><a href="profile.html"><img src="images/navi/profile.png" alt="profile" width="100px"></a></li>
-          <li><a href="contact.html"><img src="images/navi_waku/mail_waku.png" alt="contact" width="100px"></a></li>
+          <li><a href="contact.php"><img src="images/navi_waku/mail_waku.png" alt="contact" width="100px"></a></li>
         </ul>
       </nav>
 <!-- モバイル用メニュー -->
@@ -42,53 +42,39 @@
     </header>
     </div>
     <div class="container-main">
-      <div class="main-img">
-        <img class="ebe" src="images/jinjya.png" alt="神社">
-      </div>
-      <section>
-        <div class="container-contact">
-          <div class="container-contact__box shadow">
-            <h3>Contact me</h3>
-            <p>*すべてご入力ください</p>
-            <div class="contact">
-              <form action="" method="post">
-                <p>Name*</p>
-                <p class="error">お名前をご入力ください</p>
-                <input type="text" name="name" size="41" required>
-                <p>E-Mail*</p>
-                <p class="error">メールアドレスをご入力ください</p>
-                <input type="email" name="email" size="41" required>
-                <p>Message*</p>
-                <p class="error">メッセージをご入力ください</p>
-                <textarea name="textarea" cols="40" rows="5" required></textarea></p>
-                <p><input type="submit" value="send" class="input_send"></p>
-              </form>
-            </div>
-            <div class="mydata">
-              <img src="images/name_stamp.png" width="250" alt="連絡先">
-            </div>
-            <div class="sns">
-              <ul>
-                <li>
-                  <a href="https://twitter.com/FukkaTw" target="_blank"><img src="images/twitter.png" width="50" alt="twitter"></a>
-                </li>
-                <li>
-                  <a href="https://www.instagram.com/hatenaru.insta" target="_blank"><img src="images/insta.png" width="50" alt="insta"></a>
-                </li>
-              </ul>
-            </div>
-          </div>
+    <div class="main-img">
+      <img class="ebe" src="images/jinjya.png" alt="神社">
+    </div>
+    <section>
+      <div class="container-contact">
+        <div class="container-contact__box shadow">
+          <img src="images/post-kitte.png" alt="切手" class="post-kitte" width="200">
+          <img src="images/post-stamp.png" alt="スタンプ" class="post-stamp" width="300">
+          <p class="p_done">お問い合わせありがとうございました</p>
         </div>
-        <div ><a href="contact_conf.html">
-        <img src="images/title.png" alt="fukaya" class="title-contact"></a></div>
-        <img src="images/suisai04.png" alt="絵の具" class="suisai-contact">
+          <div class="sns_done">
+            <ul>
+              <li>
+                <a href="https://twitter.com/FukkaTw" target="_blank"><img src="images/twitter.png" width="50" alt="twitter"></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/hatenaru.insta" target="_blank"><img src="images/insta.png" width="50" alt="insta"></a>
+              </li>
+          </ul>
+        </div>
+        </div>
+      </div>
+      <a href="index.html">
+      <img src="images/title.png" alt="fukaya" class="title-contact"></a>
+      <img src="images/suisai04.png" alt="絵の具" class="suisai-contact">
     </section>
   </div>
   <footer>
       <div class="footer_contact">
         <p><small>&copy; Aki Fukaya.All Rights Reserved.</small></p>
       </div>
-    </footer>
+  </footer>
+  </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="js/style.js"></script>

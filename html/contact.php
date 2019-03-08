@@ -1,3 +1,62 @@
+<?php
+session_start();
+
+function h($string) {
+    return htmlspecialchars($string, ENT_QUOTES);
+}
+function getToken() {
+    return hash('sha256', session_id());
+}
+
+$name    = "";
+$email   = "";
+$message = "";
+
+if (isset($_SESSION["contact"])) {
+    $contact = $_SESSION["contact"];
+    $name    = $contact["name"];
+    $email   = $contact["email"];
+    $message = $contact["message"];
+}
+
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    $isValidated = TRUE;
+
+    $name   = $_POST["name"];
+    $email   = $_POST["email"];
+    $message   = $_POST["message"];
+    $token   = $_POST["token"];
+
+    if ($name == "") {
+        $errorName   = "お名前を入力してください";
+        $isValidated = FALSE;
+    }
+    if ($email == "") {
+        $errorEmail  = "メールアドレスを入力してください";
+        $isValidated = FALSE;
+    }
+    elseif (!preg_match("/^[^@]+@[^@]+\.[^@]+$/", $email)) {
+        $errorEmail  = "メールアドレスの形式がただしくありません";
+        $isValidated = FALSE;
+    }
+    if ($message == "") {
+        $errorMessage = "メッセージを入力してください";
+        $isValidated  = FALSE;
+    }
+    if ($isValidated == TRUE) {
+        $contact = array(
+            "name"    => $name,
+            "email"   => $email,
+            "message" => $message,
+            "token"   => $token
+        );
+        $_SESSION["contact"] = $contact;
+        header("Location: contact_conf.php");
+        exit;
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -28,7 +87,7 @@
           <li><a href="work.html"><img src="images/navi/work.png" alt="work" width="100px"></a></li>
           <li><a href="skill.html"><img src="images/navi/skill.png" alt="skill" width="100px"></a></li>
           <li><a href="profile.html"><img src="images/navi/profile.png" alt="profile" width="100px"></a></li>
-          <li><a href="contact.html"><img src="images/navi_waku/mail_waku.png" alt="contact" width="100px"></a></li>
+          <li><a href="contact.php"><img src="images/navi_waku/mail_waku.png" alt="contact" width="100px"></a></li>
         </ul>
       </nav>
 <!-- モバイル用メニュー -->
@@ -51,16 +110,23 @@
             <h3>Contact me</h3>
             <p>*すべてご入力ください</p>
             <div class="contact">
-              <form action="" method="post">
+              <form action="" method="post" novalidate>
+              <input type="hidden" name="token" value="<?php echo getToken(); ?>">
                 <p>Name*</p>
-                <p class="error">お名前をご入力ください</p>
-                <input type="text" name="name" size="41" required>
+                <?php if (isset($errorName)): ?>
+                <p class="error"><?php echo h($errorName); ?></p>
+                <?php endif; ?>
+                <input type="text" name="name" size="41" value="<?php echo h($name); ?>" required>
                 <p>E-Mail*</p>
-                <p class="error">メールアドレスをご入力ください</p>
-                <input type="email" name="email" size="41" required>
+                <?php if (isset($errorEmail)): ?>
+                <p class="error"><?php echo h($errorEmail); ?></p>
+                <?php endif; ?>
+                <input type="email" name="email" size="41" value="<?php echo h($email); ?>" required>
                 <p>Message*</p>
-                <p class="error">メッセージをご入力ください</p>
-                <textarea name="textarea" cols="40" rows="5" required></textarea></p>
+                <?php if (isset($errorMessage)): ?>
+                <p class="error"><?php echo h($errorMessage); ?></p>
+                <?php endif; ?>
+                <textarea name="message" cols="40" rows="5" required><?php echo h($message); ?></textarea>
                 <p><input type="submit" value="send" class="input_send"></p>
               </form>
             </div>
@@ -79,10 +145,11 @@
             </div>
           </div>
         </div>
-        <div ><a href="contact_conf.html">
+        <div ><a href="index.html">
         <img src="images/title.png" alt="fukaya" class="title-contact"></a></div>
         <img src="images/suisai04.png" alt="絵の具" class="suisai-contact">
     </section>
+  </div>
   </div>
   <footer>
       <div class="footer_contact">
