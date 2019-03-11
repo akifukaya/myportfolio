@@ -126,8 +126,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                 <?php if (isset($errorMessage)): ?>
                 <p class="error"><?php echo h($errorMessage); ?></p>
                 <?php endif; ?>
-                <textarea name="message" cols="40" rows="5" required><?php echo h($message); ?></textarea>
-                <p><input type="submit" value="send" class="input_send"></p>
+                <textarea name="message" cols="40" rows="4" required><?php echo h($message); ?></textarea>
+                <p><button type="submit" class="input_send">send<span>check <i class="fa fa-arrow-right"></i></span></button></p>
               </form>
             </div>
             <div class="mydata">

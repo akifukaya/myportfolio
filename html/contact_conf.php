@@ -130,7 +130,7 @@ if (isset($_POST["back"])) {
     <section>
       <div class="container-contact">
         <div class="container-contact__box shadow">
-          <h3>Send OK?</h3>
+          <h3>Send it?</h3>
           <p class="p_conf">以下の内容でよろしいでしょうか</p>
           <img src="images/post-kitte.png" alt="切手" class="post-kitte" width="200">
           <div class="contact">
@@ -149,8 +149,8 @@ if (isset($_POST["back"])) {
             </tr>
           </table>
           <form action="" method="post">
-            <input type="submit" name="send" value="send" class="input_btn">
-            <input type="submit" name="back" value="back" class="input_btn">
+            <p class="conf_btn"><button type="submit" name="back" class="back_btn"><span><i class="fa fa-arrow-left"></i></span> back</button></p>
+            <p class="conf_btn"><button type="submit" name="send" class="input_btn">send <span><i class="fa fa-paper-plane"></i></span></button></p>
           </form>
           </div>
         </div>
